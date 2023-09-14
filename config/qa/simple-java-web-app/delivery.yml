@@ -12,8 +12,6 @@ metadata:
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    kapp.k14s.io/app: "1694535688793762387"
-    kapp.k14s.io/association: v1.1ce89a254e20ff0cc690fcdf94e9676f
     app.kubernetes.io/component: run
     carto.run/workload-name: simple-java-web-app
 spec:
@@ -47,8 +45,6 @@ spec:
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: simple-java-web-app
         conventions.carto.run/framework: spring-boot
-        kapp.k14s.io/app: "1694535688793762387"
-        kapp.k14s.io/association: v1.1ce89a254e20ff0cc690fcdf94e9676f
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.path: actuator
         tanzu.app.live.view.application.actuator.port: "8081"
@@ -59,7 +55,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: gcr.io/pa-cdelashmutt/tap-h2o/supply-chain/workloads/simple-java-web-app-qa@sha256:75f6c864ba1c95047eb4cba0bde943ffa91107626622a403416987c71cc76aa9
+        image: gcr.io/pa-cdelashmutt/tap-h2o/supply-chain/workloads/simple-java-web-app-qa@sha256:3062ae8fbab69b6d3f5f70dd2d4e30e1caa198a940d09158bc64fd30705570af
         livenessProbe:
           httpGet:
             path: /livez

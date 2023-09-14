@@ -12,8 +12,6 @@ metadata:
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    kapp.k14s.io/app: "1694535688793762387"
-    kapp.k14s.io/association: v1.1ce89a254e20ff0cc690fcdf94e9676f
     app.kubernetes.io/component: run
     carto.run/workload-name: simple-java-web-app
 spec:
@@ -47,8 +45,6 @@ spec:
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: simple-java-web-app
         conventions.carto.run/framework: spring-boot
-        kapp.k14s.io/app: "1694535688793762387"
-        kapp.k14s.io/association: v1.1ce89a254e20ff0cc690fcdf94e9676f
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.path: actuator
         tanzu.app.live.view.application.actuator.port: "8081"

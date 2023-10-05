@@ -55,7 +55,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: gcr.io/pa-cdelashmutt/tap-h2o/supply-chain/workloads/simple-java-web-app-qa@sha256:367811e0beb4b4ac33f53177f32de1a65611d171bf6ca44acdd420836e9e61f2
+        image: gcr.io/pa-cdelashmutt/tap-h2o/supply-chain/workloads/simple-java-web-app-qa@sha256:2ec1c28115e8f768903b8e96719c578abccf425a8defdd03606b496b345cecc3
         livenessProbe:
           httpGet:
             path: /livez
